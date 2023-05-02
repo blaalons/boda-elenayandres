@@ -37,6 +37,7 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="bienvenidos.html"  style="color:#000000">Bienvenidos</a></li>
 						<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="celebracion.html"  style="color:#000000">Ceremonia</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="confirmaasistencia.html"  style="color:#000000">Asistencia</a></li>
+						<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="recomendaciones.html">Recomendaciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +96,7 @@
 						
 						</br>
 						
-						<form method="post" action="">
+						<form id="myForm">
 													
 							<div class="row">
 								<!-- Nombre-->
@@ -257,6 +258,8 @@
 							</div>
 														
 						</form>
+						
+						<a class="btn btn-outline-secondary btn-xl" href="recomendaciones.html" style="margin-top:10%; margin-left:5%; border-radius: 24px">Recomendaciones</a>
 					
 					</div>
 				
@@ -270,18 +273,39 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Cris & Manu</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Elena & Andrés</div>
                     </div>
                 </div>
             </div>
         </footer>
 		
+				<!-- Script Form-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		
+		<script>
+		function SubForm (){
+            console.log($("#myForm").serializeArray())
+			// $.ajax({
+			// 	url:"https://api.apispreadsheets.com/data/J6BO4NfYDxk2VGZJ/",  QUITAR ALBER
+			// 	type:"post",
+			// 	data:$("#myForm").serializeArray(),
+			// 	success: function(){
+			// 		alert("Form Data Submitted :)")
+			// 	},
+			// 	error: function(){
+			// 		alert("There was an error :(")
+			// 	}
+			// });
+		}
+		</script>
+	
+	
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 		
 		
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
     </body>
 </html>
